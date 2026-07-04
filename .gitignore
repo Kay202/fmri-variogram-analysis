@@ -1,0 +1,16 @@
+# MATLAB
+*.asv
+*.mex*
+*.autosave
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Large fMRI files
+*.nii
+*.nii.gz
+
+# Optional: uncomment if outputs shouldn't be published
+# *.mat
+# *.xlsx

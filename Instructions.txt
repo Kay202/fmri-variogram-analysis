@@ -1,0 +1,14 @@
+These set of instructions are for running the codes. Make sure to already have a first level GLM analysis done. The results of the GLM analysis should be based on non smoothed images and residual images should be produced in addition to the betas (betas are not used in this analysis). Data must follow the Bids format. MATLAB is used for the initial GLM and variogram estimation due to the availability of tools to handle fmri images. R is used for the additional analysis. Run the programs in this order:
+
+Have two different paths ready:
+
+ i. Path to save results
+ii. Path to the fmri images and brain masks
+
+
+1. variogram_directional_final.m
+2. Directional Anisotropy Check.R
+3. Main analysis_Model Fitting.R
+4. Boostrap analysis.R
+5. Bias Share Bootstrap CIs.R
+6. Formal Sign Test.R
