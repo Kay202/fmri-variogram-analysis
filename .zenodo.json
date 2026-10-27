@@ -1,0 +1,41 @@
+{
+  "upload_type": "software",
+  "title": "fmri-variogram-analysis: replication code",
+  "version": "v2.0.0",
+  "language": "eng",
+  "access_right": "open",
+  "license": "cc-by-4.0",
+  "creators": [
+    {
+      "name": "Arhin, Godfred",
+      "affiliation": "The University of Texas at El Paso",
+      "orcid": "0009-0007-5426-5409"
+    },
+    {
+      "name": "Kubuafor, Emmanuel",
+      "affiliation": "University of Washington",
+      "orcid": "0009-0000-7315-4041"
+    }
+  ],
+  "keywords": [
+    "spatial autocorrelation",
+    "image resampling",
+    "admissible covariance models",
+    "familywise error rate",
+    "identifiability",
+    "fMRI"
+  ],
+  "description": "<p>Replication code for <i>What a Variogram on a Voxel Lattice Can and Cannot Determine: Non-Parametric Estimation, an Interpolation Signature, and the Limits of Cluster-Extent Calibration</i>.</p><p>The archive carries the code and nothing else: every script behind every table and figure in the paper, and a manifest naming the script and the inputs behind each one. It is built from the GitHub repository at the tagged release, so the two cannot diverge.</p><p>No data is distributed. The chain starts from the public dataset ds005891, and its imaging stage needs MATLAB with SPM, about 132 GB of disk, and the stimulus-presentation logs, which are not in the OpenNeuro release. The analysis and output stages run in R from the intermediates that stage writes; the output stage regenerates every table and figure in seconds. See the README for the run order and for what reproduces.</p>",
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/Kay202/fmri-variogram-analysis/tree/v2.0.0",
+      "relation": "isSupplementTo",
+      "resource_type": "software"
+    },
+    {
+      "identifier": "https://openneuro.org/datasets/ds005891",
+      "relation": "isDerivedFrom",
+      "resource_type": "dataset"
+    }
+  ]
+}
