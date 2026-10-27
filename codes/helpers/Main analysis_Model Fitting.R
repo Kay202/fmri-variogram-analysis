@@ -262,12 +262,19 @@ resid_summary <- resid_all %>%
             Pct_negative=round(mean(Residual<0)*100,1), N=n(), .groups="drop")
 print(resid_summary)
 
-postpeak_resids <- resid_all %>% filter(Zone=="Post-peak (d > 6.5mm)") %>% pull(Residual)
-sign_test <- binom.test(sum(postpeak_resids<0), length(postpeak_resids), p=0.5, alternative="greater")
-cat("\nSign test (post-peak residuals negative):\n")
-cat("  Negative:", sum(postpeak_resids<0), "/", length(postpeak_resids),
-    paste0("(", round(mean(postpeak_resids<0)*100,1), "%)\n"))
-cat("  p-value:", format(sign_test$p.value, digits=4), "\n")
+# --- REMOVED (revision item C5) -----------------------------------------------
+# An exact binomial test used to run here on the post-peak residuals POOLED
+# across subjects and bins, treating every residual as an independent Bernoulli
+# trial. Residuals from a smooth fitted curve are strongly autocorrelated within
+# a subject, and all subjects share the same systematic misfit, so the effective
+# sample size is far below the nominal count and the p-value is not
+# interpretable.
+#
+# This was never the test reported. Table 1 of the manuscript uses the 21
+# PER-SUBJECT mean residuals as the unit of analysis, giving 2 * 0.5^21 =
+# 9.5e-7, and that test lives in "Formal Sign Test.R". The pooled version is
+# deleted here so it cannot be mistaken for the reported result.
+# ------------------------------------------------------------------------------
 
 write.csv(gauss_table, "act1_step2_gaussian_fit_corrected.csv", row.names=FALSE)
 write.csv(resid_all, "act1_step2_gaussian_residuals_corrected.csv", row.names=FALSE)

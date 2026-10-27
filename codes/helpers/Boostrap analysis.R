@@ -364,8 +364,11 @@ fail_tab <- status_rows %>%
   arrange(NoiseModel, CV, Family, Method, desc(n))
 write.csv(fail_tab, "synthetic_bootstrap_v3_failure_modes.csv", row.names = FALSE)
 non_ok <- fail_tab %>% filter(Status != "ok")
-if (nrow(non_ok) == 0) cat("All cells: 100% OK across all replicates.\n")
-else print(non_ok %>% head(50), n = Inf)
+if (nrow(non_ok) == 0) {
+  cat("All cells: 100% OK across all replicates.\n")
+} else {
+  print(non_ok %>% head(50), n = Inf)
+}
 
 # ---------------------------------------------------------------------
 # 13. Metrics vs known true curve
