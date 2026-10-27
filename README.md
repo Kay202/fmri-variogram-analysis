@@ -149,3 +149,9 @@ MATLAB script therefore begins with `restoredefaultpath; rehash toolboxcache;`.
 If SPM is on your saved path you will still see two startup warnings that
 `isfile` and `isfolder` have the same names as built-ins; they are emitted before
 the first line runs, and the `restoredefaultpath` clears the shadowing.
+
+## License
+
+Creative Commons Attribution 4.0 International. The full terms are in `LICENSE`,
+and the same license is recorded on the Zenodo archive, which is minted from
+this repository. Use the code as you like, with credit.
