@@ -152,6 +152,9 @@ the first line runs, and the `restoredefaultpath` clears the shadowing.
 
 ## License
 
+Copyright (c) 2026 Godfred Arhin and Emmanuel Kubuafor.
+
 Creative Commons Attribution 4.0 International. The full terms are in `LICENSE`,
-and the same license is recorded on the Zenodo archive, which is minted from
-this repository. Use the code as you like, with credit.
+which is the legal code verbatim so that GitHub and Zenodo both read it as
+CC BY 4.0, and the same license is recorded on the archive minted from this
+repository. Use the code as you like, with credit.

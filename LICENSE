@@ -1,16 +1,3 @@
-fmri-variogram-analysis
-Replication code for "What a Variogram on a Voxel Lattice Can and Cannot
-Determine: Non-Parametric Estimation, an Interpolation Signature, and the
-Limits of Cluster-Extent Calibration"
-
-Copyright (c) 2026 Godfred Arhin and Emmanuel Kubuafor
-
-Licensed under the Creative Commons Attribution 4.0 International License.
-You may share and adapt this material for any purpose, including
-commercially, provided you give appropriate credit. A human-readable summary
-is at https://creativecommons.org/licenses/by/4.0/ and the full legal code,
-which is what applies, follows below verbatim.
-
 Attribution 4.0 International
 
 =======================================================================
