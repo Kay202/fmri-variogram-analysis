@@ -154,7 +154,18 @@ the first line runs, and the `restoredefaultpath` clears the shadowing.
 
 Copyright (c) 2026 Godfred Arhin and Emmanuel Kubuafor.
 
-Creative Commons Attribution 4.0 International. The full terms are in `LICENSE`,
-which is the legal code verbatim so that GitHub and Zenodo both read it as
-CC BY 4.0, and the same license is recorded on the archive minted from this
-repository. Use the code as you like, with credit.
+This program is free software; you can redistribute it and/or modify it under
+the terms of the GNU General Public License as published by the Free Software
+Foundation; either version 2 of the License, or (at your option) any later
+version.
+
+It is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR
+PURPOSE. See the GNU General Public License for more details.
+
+The full terms are in `LICENSE`, which is the GPL-2.0 text verbatim and nothing
+else, and the same license is recorded on the Zenodo archive minted from this
+repository. The "or any later version" election sits here rather than at the top
+of that file on purpose: prose above the legal code drops it below the
+similarity threshold GitHub's detector uses, and the repository then reports no
+recognised license at all.
